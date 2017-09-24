@@ -1,0 +1,47 @@
+{
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://wp-languages.github.io"
+    },
+    {
+      "type": "composer",
+      "url": "https://wpackagist.org"
+    },
+    {
+      "type": "package",
+      "package": {
+        "name": "advanced-custom-fields/advanced-custom-fields-pro",
+        "version": "5.3.7",
+        "type": "wordpress-plugin",
+        "dist": {
+          "type": "zip",
+          "url": "https://connect.advancedcustomfields.com/index.php?t=5.3.7&p=pro&a=download&k=b3JkZXJfaWQ9NTQ3OTJ8dHlwZT1kZXZlbG9wZXJ8ZGF0ZT0yMDE1LTA0LTI0IDA2OjE2OjE3"
+        }
+      }
+    }
+  ],
+  "require": {
+    "php": ">=5.4",
+    "johnpbloch/wordpress": "4.5",
+    "koodimonni-language/core-de_ch": "*",
+
+    "tobiv/wp-primordial": "^1.0.0",
+    "wpackagist-plugin/better-wp-security": "5.3.5",
+    "wpackagist-plugin/updraftplus": "1.12.4",
+    "advanced-custom-fields/advanced-custom-fields-pro": "5.3.7"
+  },
+  "extra": {
+    "wordpress-install-dir": "web/wp",
+    "installer-paths": {
+      "web/app/plugins/{$name}": ["type:wordpress-plugin"],
+      "web/app/themes/{$name}": ["type:wordpress-theme"],
+      "web/app/mu-plugins/{$name}": ["type:wordpress-muplugin"]
+    },
+    "dropin-paths": {
+      "web/app/languages/": ["vendor:koodimonni-language"],
+      "web/app/languages/plugins/": ["vendor:koodimonni-plugin-language"],
+      "web/app/languages/themes/": ["vendor:koodimonni-theme-language"]
+    }
+  }
+}

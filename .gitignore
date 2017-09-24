@@ -1,0 +1,19 @@
+# WordPress/App
+web/app/*
+!web/app/db-error.php
+!web/app/mu-plugins
+web/app/mu-plugins/wp-primordial/*
+!web/app/themes
+
+web/wp
+
+# Theme
+node_modules
+
+# Vendor (e.g. Composer)
+vendor/*
+!vendor/.gitkeep
+
+# System
+.DS_Store
+npm-debug.log
